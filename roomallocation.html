@@ -91,6 +91,20 @@ const name = document.getElementById('guestName').value;
                 const table = document.getElementById('roomTable').getElementsByTagName('tbody')[0];
                 const newRow = table.insertRow();
 
+newRow.insertCell(0).innerText = name;
+                newRow.insertCell(1).innerText = date;
+                newRow.insertCell(2).innerText = type;
+                newRow.insertCell(3).innerText = roomNumber;
+
+                document.getElementById('allotmentForm').reset();
+            } else {
+                alert("Please fill all fields");
+            }
+        }
+    </script>
+
+</body>
+</html>
 
 
 
