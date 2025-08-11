@@ -82,6 +82,15 @@ th, td {
         let roomNumber = 100;
 
         function allotRoom() {
+const name = document.getElementById('guestName').value;
+            const date = document.getElementById('checkInDate').value;
+            const type = document.getElementById('roomType').value;
+
+            if (name && date && type) {
+                roomNumber++; // Auto-increment room number
+                const table = document.getElementById('roomTable').getElementsByTagName('tbody')[0];
+                const newRow = table.insertRow();
+
 
 
 
